@@ -17,13 +17,7 @@ import reducer from './reducer';
 // store - stores data, think of state.
 
 // reducer - function that is used to update store.
-const initialStore = {
-  cart: cartItems,
-  total: 12,
-  amount: 5,
-};
-
-const store = createStore(reducer, initialStore);
+const store = createStore(reducer);
 
 function App() {
   // cart setup
