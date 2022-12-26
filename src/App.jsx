@@ -17,7 +17,10 @@ import reducer from './reducer';
 // store - stores data, think of state.
 
 // reducer - function that is used to update store.
-const store = createStore(reducer);
+const store = createStore(
+  reducer,
+  window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__(),
+);
 
 function App() {
   // cart setup
